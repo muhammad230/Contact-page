@@ -9,16 +9,3 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 24px;
-}
-nav li{
-    font-weight: 500;
-}

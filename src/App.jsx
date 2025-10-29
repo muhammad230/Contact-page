@@ -1,5 +1,5 @@
 import './App.css'
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation/Navigation'
 import contactHeader from './components/contactHeader'
 
 function App() {
