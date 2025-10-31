@@ -1,11 +1,11 @@
 import styles from "./Button.module.css"
 import { MdMessage } from "react-icons/md";
 
-function Button() {
+function Button(props) {
   return (
-    <button className={styles.btn}>
-      <MdMessage />
-      button
+    <button className={props.isnew ? styles.new_btn : styles.btn}>
+     {props.icon}
+     {props.text}
     </button>
   )
 }

@@ -1,13 +1,23 @@
-import Button from "../Button/Button"
-import styles from "./Contactform.module.css"
+import Button from "../Button/Button";
+import styles from "./ContactForm.module.css";
+import { MdMessage } from "react-icons/md";
+import { MdLocalPhone } from "react-icons/md";
+import { HiMail } from "react-icons/hi";
 
 const Contactform = () => {
-  return <section className={styles.container}>
-    <div className={styles.contact_form}></div>
-    <div className={styles.contact_image}></div>
-    <Button/>
+  return (
+    <section className={styles.container}>
+      <div className={styles.contact_form}></div>
+      <div className={styles.contact_image}></div>
+      <div className={styles.top_btn}>
+        <Button text="VIA SUPPORT CHAT" icon={<MdMessage fontSize="24px" />} />
+        <Button text="VIA CALL" icon={<MdLocalPhone fontSize="24px" />} />
+      </div>
+       <Button 
+       isnew ={true}
+       text="VIA EMAIL FORM" icon={<HiMail fontSize="24px" />} />
+    </section>
+  );
+};
 
-  </section>
-}
-
-export default Contactform
+export default Contactform;

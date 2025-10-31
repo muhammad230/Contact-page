@@ -1,5 +1,10 @@
 .container{
-    display: flex;
+    /* display: flex; */
     max-width: 1000px;
     margin: 0 auto;
+}
+.top_btn{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
