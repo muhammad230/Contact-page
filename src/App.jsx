@@ -1,6 +1,7 @@
 import './App.css'
 import Navigation from './components/Navigation/Navigation'
 import ContactHeader from './components/ContactHeader/contactHeader'
+import Contactform from './components/ContactForm/Contactform'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   <div>
     <Navigation/>
     <ContactHeader/>
+    <Contactform/>
  </div>
  )
    

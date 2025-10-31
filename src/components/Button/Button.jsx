@@ -1,10 +1,12 @@
 import styles from "./Button.module.css"
+import { MdMessage } from "react-icons/md";
 
 function Button() {
   return (
-    <div>
-      
-    </div>
+    <button className={styles.btn}>
+      <MdMessage />
+      button
+    </button>
   )
 }
 
