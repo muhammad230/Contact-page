@@ -16,6 +16,13 @@ const Contactform = () => {
        <Button 
        isnew ={true}
        text="VIA EMAIL FORM" icon={<HiMail fontSize="24px" />} />
+
+       <form>
+        <div className={styles.form_control}>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" />
+        </div>
+       </form>
     </section>
   );
 };
