@@ -1,9 +1,12 @@
 .container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.contact_form{
      display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 .top_btn{
     display: flex;
@@ -15,7 +18,7 @@
     flex-direction: column;
     gap: 24px;
 }
-.container form{
+.contact_form form{
     display: flex;
     gap: 20px;
     flex-direction: column;
