@@ -15,6 +15,11 @@
     flex-direction: column;
     gap: 24px;
 }
+.container form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
 .form_control{
    display: flex;
    flex-direction: column;
