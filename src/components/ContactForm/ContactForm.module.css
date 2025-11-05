@@ -5,26 +5,32 @@
   margin-top: 40px;
   align-items: end;
 }
-.contact_form{
-     display: flex;
-    flex-direction: column;
-    gap: 24px;
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 .top_btn{
     display: flex;
     gap: 32px;
+  margin-bottom: 16px;
+
+
 }
-.contact_form form{
-   display: flex;
+.contact_form form {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   padding-bottom: 20px;
-  flex-direction: column;
 }
-.form_control{
+
+.form_control {
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
+  margin-bottom: 16px;
 }
 .form_control input{
     height: 40px;
@@ -38,4 +44,14 @@
   background-color: white;
   padding: 0 10px;
 }
+.form_area {
+  flex: 1;
+}
+
+.contact_image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 
