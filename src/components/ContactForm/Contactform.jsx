@@ -5,6 +5,14 @@ import { MdLocalPhone } from "react-icons/md";
 import { HiMail } from "react-icons/hi";
 
 const Contactform = () => {
+
+  const onSubmit = (event) =>{
+    event.preventDefault();
+    console.log(event.target[0].value);
+    console.log(event.target[1].value);
+    console.log(event.target[2].value);
+    
+  }
   return (
     <section className={styles.container}>
   <div className={styles.contact_form}>
@@ -20,7 +28,7 @@ const Contactform = () => {
         icon={<HiMail fontSize="24px" />}
       />
 
-      <form>
+      <form onSubmit={onSubmit}>
         <div className={styles.form_control}>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" />
