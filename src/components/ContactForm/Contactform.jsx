@@ -3,8 +3,12 @@ import styles from "./ContactForm.module.css";
 import { MdMessage } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
 import { HiMail } from "react-icons/hi";
+import { useState } from "react";
 
 const Contactform = () => {
+  const [name, setName] = useState();
+  const [] = useState();
+  const [] = useState();
 
   const onSubmit = (event) =>{
     event.preventDefault();
@@ -44,6 +48,7 @@ const Contactform = () => {
         <div style={{ display: "flex", justifyContent: "end" }}>
           <Button text="Submit" icon={<HiMail fontSize="24px" />} />
         </div>
+        <div>{name + " " + email + " " +text}</div>
       </form>
     </div>
 
