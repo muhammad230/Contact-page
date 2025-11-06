@@ -6,16 +6,15 @@ import { HiMail } from "react-icons/hi";
 import { useState } from "react";
 
 const Contactform = () => {
-  const [name, setName] = useState();
-  const [] = useState();
-  const [] = useState();
+  const [name, setName] = useState("Ali");
+  const [email, setEmail] = useState("ali.khansmr3@gmail.com");
+  const [text, setText] = useState("coding is ....");
 
   const onSubmit = (event) =>{
     event.preventDefault();
-    console.log(event.target[0].value);
-    console.log(event.target[1].value);
-    console.log(event.target[2].value);
-    
+   setName(event.target[0].value);
+   setEmail(event.target[1].value);
+   setText(event.target[2].value);
   }
   return (
     <section className={styles.container}>
